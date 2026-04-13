@@ -65,7 +65,6 @@ public class loops {
                 continue;
             }
             System.out.println(i);
-            System.out.println();
 
         }
     }
