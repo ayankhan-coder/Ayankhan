@@ -8,13 +8,13 @@ class Animal{                               // L1-----INHERITANCE PARENT AND CHI
         System.out.println("they can eating!!");
     }
 }
-class dog extends Animal{
+class Dog extends Animal{
     public void barking(){
         System.out.println("they can barking!!!");
     }
 }
 
-/*class base{                             // L2------ parent & child class
+/*class Base{                             // L2------ parent & child class
     public int x;
     public int getX() {
         return x;
@@ -25,7 +25,7 @@ class dog extends Animal{
     }
 }
 
-class Derived extends base{
+class d erived extends base{
     public int y;
 
     public int getY() {
@@ -79,7 +79,7 @@ class ChildOfDerived extends Derived{
 class ATMAccount extends Account {
     // Child constructor
     ATMAccount(int accNo, double bal) {
-        super(accNo, bal);   // 👈 VERY IMPORTANT
+        super(accNo, bal);   //  VERY IMPORTANT
         System.out.println("ATM Account ready");
     }
     void withdraw(double amount) {
@@ -207,7 +207,7 @@ public class Inheritance_ch_10 {
         a.eating();
 // 	a.barking();              this will error bcz parent can't use child things
         System.out.println("-----with respect to dog-----");
-        dog d=new dog();
+        Dog d=new Dog();
         d.walking();//child calling parent
         d.eating();
         d.barking();
@@ -261,91 +261,5 @@ public class Inheritance_ch_10 {
         e.sendMessage();
         w.status();
         i.reels();*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//        class Base2{
-//            Base2(int a){
-//                System.out.println("i am overloaded constructor of base of valur a "+a);
-//            }
-//            Base2(){
-//                System.out.println("i am a base constructor");
-//            }
-//        }
-//        class Derived2 extends Base2 {
-//            Derived2(){
-//                super(1);
-//                System.out.println("i am a derived constructor");
-//            }
-//            Derived2(int b){
-//                super(2);
-//                System.out.println("i am overloaded constructor of derived with value b "+b);
-//            }
-//        }
-//        class ChildOfDerived extends Derived2 {
-//            ChildOfDerived(){
-//                super(10);
-//                System.out.println("i am constructor of ChildOfDerived");
-//            }
-//        }
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
