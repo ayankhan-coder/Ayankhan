@@ -1,6 +1,6 @@
 /* THIS & SUPER keyWord in Java */
 
-class Person {                  // L1----------
+class Person {                  // L1 ----------
     String name;
 
     Person(String name) {
@@ -36,7 +36,7 @@ class Vehicle {
     }
 }
 
-/*class Car extends Vehicle {
+/*class Car extends Vehicle {           // L2 -----------
     int price;
     String fuelType;
 
@@ -56,12 +56,52 @@ class Vehicle {
         System.out.println("Fuel: " + fuelType);
     }
 }*/
+
+class Account {                             // L3 -----------
+    private String accountHolder;
+
+    public Account(String accountHolder) {
+        this.accountHolder = accountHolder;
+    }
+    public String getAccountHolder() {
+        return accountHolder;
+    }
+}
+class SavingAccount extends Account {
+    private float balance;
+    private float interestRate;
+
+    public SavingAccount(String accountHolder) {
+        super(accountHolder);
+        this.balance = 0;
+        this.interestRate = 5;
+    }
+    public SavingAccount(String accountHolder, int balance) {
+        super(accountHolder);
+        this.balance = balance;
+        this.interestRate = 5;
+    }
+    public SavingAccount(String accountHolder, int balance, int interestRate) {
+        super(accountHolder);
+        this.balance = balance;
+        this.interestRate = interestRate;
+    }
+    public float calculateInterest() {
+        return (balance * interestRate) / 100;
+    }
+    public void displayDetails() {
+        System.out.println("Account Holder: " + getAccountHolder());
+        System.out.println("Balance: " + balance);
+        System.out.println("Interest Rate: " + interestRate);
+        System.out.println("Interest: " + calculateInterest());
+    }
+}
 //########################################################################################
 //########################################################################################
 class This_Super_keyWord{
     public static void main(String[] args) {
 
-        Student student = new Student("Ayan");        // L1-----------
+        Student student = new Student("Ayan");        // L1 -----------
         Student s = new Student("Ayan","java");
 
         System.out.println(student.getName());
@@ -71,11 +111,17 @@ class This_Super_keyWord{
         System.out.println(s.getCourse());
 
 
-       /* Car c1 = new Car("Toyota", 500000);           // L2----------
+       /* Car c1 = new Car("Toyota", 500000);           // L2 ----------
         Car c2 = new Car("Mahindra", 900000, "Diesel");
 
         c1.displayDetails();
         c2.displayDetails();*/
+
+                                                          // L3 ------------
+        SavingAccount savingAccount = new SavingAccount("Ayan",50000,5);
+        SavingAccount savingAccount1 = new SavingAccount("Ahmed",199);
+        savingAccount.displayDetails();
+        savingAccount1.displayDetails();
 
     }
 }
