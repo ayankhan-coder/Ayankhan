@@ -135,6 +135,7 @@ public class Abstract_Interfaces {
         System.out.println("Which Vehicle You Wanna Start : ");
         System.out.println("1: Car");
         System.out.println("2: Bike");
+        System.out.print("Enter : ");
         int choice = sc.nextInt();
         if (choice == 1){
             v = new Car();
@@ -155,6 +156,8 @@ public class Abstract_Interfaces {
         s2.study();
         CollegeStudent cs = new CollegeStudent("khan");
         cs.play();*/
+
+
 
 
 
