@@ -1,3 +1,4 @@
+package practice;
 
 import java.util.Scanner;
 /*JAVA INTERFACES AND DEFAULT METHODS*/
@@ -141,7 +142,7 @@ public class Interfaces_DefaultMethods {
         iPhone.camera();*/
 
         YoutubeFunctions user;                         // L3- -----------Important
-        System.out.println("Enter 1:Youtube    2:YoutubePremium");
+        System.out.println("Enter 1:practice.Youtube    2:practice.YoutubePremium");
         int choice = sc.nextInt();
         if (choice == 1){
             user = new Youtube("ayan");

@@ -1,3 +1,5 @@
+package practice;
+
 class MyEmployee{             // L1------ GETTERS AND SETTERS
     private String name;
     private int id;

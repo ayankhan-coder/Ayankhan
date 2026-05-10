@@ -1,4 +1,4 @@
-/* THIS & SUPER keyWord in Java */
+package practice;/* THIS & SUPER keyWord in Java */
 
 class Person {                  // L1 ----------
     String name;
@@ -36,16 +36,16 @@ class Vehicle {
     }
 }
 
-/*class Car extends Vehicle {           // L2 -----------
+/*class practice.Car extends practice.Vehicle {           // L2 -----------
     int price;
     String fuelType;
 
-    public Car(String brand, int price) {
+    public practice.Car(String brand, int price) {
         super(brand);
         this.price = price;
         this.fuelType = "Petrol";   //  default
     }
-    public Car(String brand, int price, String fuelType) {
+    public practice.Car(String brand, int price, String fuelType) {
         super(brand);
         this.price = price;
         this.fuelType = fuelType;
@@ -90,7 +90,7 @@ class SavingAccount extends Account {
         return (balance * interestRate) / 100;
     }
     public void displayDetails() {
-        System.out.println("Account Holder: " + getAccountHolder());
+        System.out.println("practice.Account Holder: " + getAccountHolder());
         System.out.println("Balance: " + balance);
         System.out.println("Interest Rate: " + interestRate);
         System.out.println("Interest: " + calculateInterest());
@@ -111,8 +111,8 @@ class This_Super_keyWord{
         System.out.println(s.getCourse());
 
 
-       /* Car c1 = new Car("Toyota", 500000);           // L2 ----------
-        Car c2 = new Car("Mahindra", 900000, "Diesel");
+       /* practice.Car c1 = new practice.Car("Toyota", 500000);           // L2 ----------
+        practice.Car c2 = new practice.Car("Mahindra", 900000, "Diesel");
 
         c1.displayDetails();
         c2.displayDetails();*/

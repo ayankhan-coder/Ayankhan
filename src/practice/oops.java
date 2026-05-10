@@ -1,3 +1,5 @@
+package practice;
+
 class Employee{         //----- Making first custom class
     int id;
     String name;

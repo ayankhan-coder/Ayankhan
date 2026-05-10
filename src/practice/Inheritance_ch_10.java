@@ -1,4 +1,4 @@
-/*INHERITANCE IN JAVA*/
+package practice;/*INHERITANCE IN JAVA*/
 
 class Animal{                               // L1-----INHERITANCE PARENT AND CHILD CLASS
     public void walking(){
@@ -14,7 +14,7 @@ class Dog extends Animal{
     }
 }
 
-/*class Base{                             // L2------ parent & child class
+/*class practice.Base{                             // L2------ parent & child class
     public int x;
     public int getX() {
         return x;
@@ -40,10 +40,10 @@ class d erived extends base{
 /*CONSTRUCTORS IN INHERITANCE*/
 class Base{                                                  // L3------CONSTRUCTORS IN INHERITANCE
     Base(){
-        System.out.println("i am Base constructor");
+        System.out.println("i am practice.Base constructor");
     }
     Base(int a){
-        System.out.println("i am overloaded constructor of Base value of a :"+a);
+        System.out.println("i am overloaded constructor of practice.Base value of a :"+a);
     }
 }
 class Derived extends Base{
@@ -52,35 +52,35 @@ class Derived extends Base{
     }
     Derived(int x,int y){
         super();
-        System.out.println("i am overloaded constructor of Derived with value of x&y :"+x + y);
+        System.out.println("i am overloaded constructor of practice.Derived with value of x&y :"+x + y);
     }
 }
 class ChildOfDerived extends Derived{
     ChildOfDerived() {
         super(10,20);
-        System.out.println("i am ChildOfDerived constructor");
+        System.out.println("i am practice.ChildOfDerived constructor");
     }
 }
 
-/*class Account {                                    //  L4------Atm example of constructor in inheritance
+/*class practice.Account {                                    //  L4------Atm example of constructor in inheritance
     int accountNumber;
     double balance;
 
     // Parent constructor
-    Account(int accNo, double bal) {
+    practice.Account(int accNo, double bal) {
         accountNumber = accNo;
         balance = bal;
-        System.out.println("Account created");
+        System.out.println("practice.Account created");
     }
     void showBalance() {
         System.out.println("Balance: " + balance);
     }
 }
-class ATMAccount extends Account {
+class ATMAccount extends practice.Account {
     // Child constructor
     ATMAccount(int accNo, double bal) {
         super(accNo, bal);   //  VERY IMPORTANT
-        System.out.println("ATM Account ready");
+        System.out.println("ATM practice.Account ready");
     }
     void withdraw(double amount) {
         if (amount <= balance) {
@@ -157,19 +157,19 @@ class College extends School{
 /*DYNAMIC METHOD DISPATCH(DMD)*/
 class Phone{                             // L9---- Dynamic Method Dispatch
     public void on(){
-        System.out.println("Turning On Phone--");
+        System.out.println("Turning On practice.Phone--");
     }
     public void call(){
-        System.out.println("Calling With Phone...");
+        System.out.println("Calling With practice.Phone...");
     }
 }
 class SmartPhone extends Phone{
     @Override
     public void on(){
-        System.out.println("Turning On SmartPhone--");
+        System.out.println("Turning On practice.SmartPhone--");
     }
     public void playMusic(){
-        System.out.println("Music Playing in SmartPhone~~~~~");
+        System.out.println("Music Playing in practice.SmartPhone~~~~~");
     }
 }
 
@@ -212,7 +212,7 @@ public class Inheritance_ch_10 {
         d.eating();
         d.barking();
 
-        /*Derived c = new Derived();                           // L2------ parent & child class
+        /*practice.Derived c = new practice.Derived();                           // L2------ parent & child class
         System.out.println("this is a child object calling itself and parent ");
         c.setY(10);
         System.out.println(c.getY());

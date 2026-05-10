@@ -1,3 +1,5 @@
+package practice;
+
 import java.util.Scanner;
 
 
@@ -39,13 +41,13 @@ abstract class Vehicle1{            // L3 ------------
 class Bike extends Vehicle1 {
     @Override
     void start(){
-        System.out.println(" Bike Starts");
+        System.out.println(" practice.Bike Starts");
     }
 }
 class Car extends Vehicle1 {
     @Override
     void start(){
-        System.out.println(" Car Starts");
+        System.out.println(" practice.Car Starts");
     }
 }
 
@@ -133,8 +135,8 @@ public class Abstract_Interfaces {
 
         Vehicle1 v;                     // L3 --------------
         System.out.println("Which Vehicle You Wanna Start : ");
-        System.out.println("1: Car");
-        System.out.println("2: Bike");
+        System.out.println("1: practice.Car");
+        System.out.println("2: practice.Bike");
         System.out.print("Enter : ");
         int choice = sc.nextInt();
         if (choice == 1){
@@ -156,20 +158,6 @@ public class Abstract_Interfaces {
         s2.study();
         CollegeStudent cs = new CollegeStudent("khan");
         cs.play();*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

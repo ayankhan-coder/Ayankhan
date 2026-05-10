@@ -45,10 +45,10 @@ class Atm {
     }
 
     public void getAccountInfo() {
-        System.out.println(" ~~ Account Holder    : " + accountHolder);
-        System.out.println(" ~~ Account Number    : " + accountNumber);
+        System.out.println(" ~~ practice.Account Holder    : " + accountHolder);
+        System.out.println(" ~~ practice.Account Number    : " + accountNumber);
         System.out.println(" ~~ Mobile Number     : " + mobileNumber);
-        System.out.println(" ~~ Account Created On : " + accountCreationDate);
+        System.out.println(" ~~ practice.Account Created On : " + accountCreationDate);
     }
 }
 
@@ -66,7 +66,7 @@ public class Atm_Project {
 
         for (int i = 0; i < 3; i++) {
 
-            System.out.print("Enter Account Number : ");
+            System.out.print("Enter practice.Account Number : ");
             long enterAccNo = sc.nextLong();
 
             System.out.print("Enter Pin : ");
@@ -74,7 +74,7 @@ public class Atm_Project {
 
             if (atm.login(enterAccNo, enterPin)) {
 
-                System.out.println("WelCome to Your Account");
+                System.out.println("WelCome to Your practice.Account");
                 found = true;
 
                 int enterOption = 0;
@@ -84,7 +84,7 @@ public class Atm_Project {
                     System.out.println("1: Balance");
                     System.out.println("2: Deposit");
                     System.out.println("3: WithDraw");
-                    System.out.println("4: Account Information");
+                    System.out.println("4: practice.Account Information");
                     System.out.println("5: Exit");
                     System.out.println("\t Enter An Option --");
 
