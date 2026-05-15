@@ -1,3 +1,5 @@
+package practice;
+
 public class Errors_Exceptions {
     public static void main(String[] args) {
         // Syntax Error Demo
